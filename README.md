@@ -44,7 +44,7 @@ In order to rebuild the site (e.g. after adding new bookmarklets), run the follo
 
 ## Adding a brand colour
 
-If you added a new network (i.e. a new .json file in the bookmarklets folder) you'll have to add the networks brand colour to `style.scss`. At the end of this file there's an alphabetically sorted list called `$brand-colors`. Go to [brandcolors.net](brandcolors.net) and see if your network is featured there. If it is, take the HEX-code and add it to the list (e.g. `"network" #000000`). If it isn't featured there, try to figure out the colour on the site itself.
+If you added a new network (i.e. a new .json file in the bookmarklets folder) you'll have to add the networks brand colour to `style.scss`. At the end of this file there's an alphabetically sorted list called `$brand-colors`. Go to [brandcolors.net](http://brandcolors.net) and see if your network is featured there. If it is, take the HEX-code and add it to the list (e.g. `"network" #000000`). If it isn't featured there, try to figure out the colour on the site itself.
 
 There are rules for this list:
 
