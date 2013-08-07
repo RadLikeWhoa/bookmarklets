@@ -1,0 +1,7 @@
+{
+  "network": "Subtle Patterns",
+  "category": "productivity",
+  "bookmarklets": {
+    "Preview background": "javascript:(function()%7Bvar newscript%3Ddocument.createElement(%27script%27)%3Bnewscript.type%3D%27text/javascript%27%3Bnewscript.async%3Dtrue%3Bnewscript.src%3D%27https://d2ueh8f0j2xol3.cloudfront.net/subtle-patterns-bookmarklet/static/js/all.js%3Fcb%3D%27 %2B Math.random()%3B(document.getElementsByTagName(%27head%27)%5B0%5D%7C%7Cdocument.getElementsByTagName(%27body%27)%5B0%5D).appendChild(newscript)%3B%7D)()%3"
+  }
+}

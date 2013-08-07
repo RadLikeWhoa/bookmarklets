@@ -1,0 +1,7 @@
+{
+  "network": "Icebergs",
+  "category": "productivity",
+  "bookmarklets": {
+    "Add Icedrop": "javascript: (function () {var a = 'setAttribute';var d = document;var s = d.createElement('script');s[a]('type', 'text/javascript');s[a]('src', 'https://iceber.gs/bookmarklet/iceframe.js');d.body.appendChild(s);})()"
+  }
+}

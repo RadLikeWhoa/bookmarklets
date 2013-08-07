@@ -1,0 +1,7 @@
+{
+  "network": "Last.fm",
+  "category": "music",
+  "bookmarklets": {
+    "View Setlist": "javascript:(function(){var a=window.location,b=a.pathname.split('/');'www.last.fm'===a.host&&'event'===b[1]?window.location='http://www.setlist.fm/redirect?lastfm='+b[2].split('+')[0]:alert('You are not on a last.fm event page')}()"
+  }
+}

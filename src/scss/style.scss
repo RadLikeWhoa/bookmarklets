@@ -1,0 +1,328 @@
+@import "compass";
+
+/* ---------------------------------------- *\
+
+    VARIABLES
+
+\* ---------------------------------------- */
+
+$red: #a32c28;
+
+$lightest-grey: #F0EFF4;
+$light-grey: #ddd;
+$grey: #ccc;
+$dark-grey: #222;
+$darkest-grey: #141414;
+$black: #000;
+
+%clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/* ---------------------------------------- *\
+
+    WEB FONTS
+
+\* ---------------------------------------- */
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
+}
+
+
+
+
+
+/* ---------------------------------------- *\
+
+    GENERIC ELEMENTS
+
+\* ---------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 0 3em;
+  font: #{100%}/#{1.5} "Source Sans Pro", sans-serif;
+  color: $dark-grey;
+  background-color: $lightest-grey;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: $red;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+
+  &:hover {
+    color: lighten($red, 10%);
+  }
+
+  &:active {
+    color: darken($red, 10%);
+  }
+}
+
+.wrap {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* ---------------------------------------- *\
+
+    HEADER
+
+\* ---------------------------------------- */
+
+.site-header {
+  padding: 4.5em 1.5em;
+  text-align: center;
+}
+
+.site-heading {
+  margin: 0 0 1.5rem;
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+.search {
+  display: block;
+  max-width: 25em;
+  width: 100%;
+  min-height: 3em;
+  padding: 0.5em;
+  margin: 0 auto 4.5em;
+  font: inherit;
+  border: 1px solid rgba($grey, 0.6);
+  border-radius: 5px;
+  appearance: none;
+  transition: box-shadow 0.25s ease-in-out, max-width 0.25s ease-in-out;
+  outline: none;
+
+  &:focus {
+    max-width: 30em;
+    box-shadow: 0 1px 2px rgba($darkest-grey, 0.15) inset;
+  }
+}
+
+.site-nav {
+  ul {
+    @extend %clearfix;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    float: left;
+    width: 33.333%;
+
+    &:first-child a {
+      margin-left: 0;
+    }
+
+    &:last-child a {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 0.75em;
+    margin: 0 0.5em;
+    border-top: 5px solid $grey;
+    border-bottom: 5px solid $grey;
+  }
+}
+
+
+
+
+
+/* ---------------------------------------- *\
+
+    NETWORKS
+
+\* ---------------------------------------- */
+
+.networks {
+  padding: 0 1.5em;
+  margin: 0;
+  list-style-type: none;
+}
+
+.network {
+  max-width: 50em;
+  padding: 3em;
+  margin: 1.5em auto;
+  background-image: radial-gradient(50% 50%, circle, rgba(#fff, 0.25), rgba(#fff, 0));
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(#222, 0.35);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.network__name {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba($darkest-grey, 0.25);
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+/* ---------------------------------------- *\
+
+    BOOKMARKLETS
+
+\* ---------------------------------------- */
+
+.bookmarklets {
+  padding-left: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.bookmarklet {
+  margin: 1em 0;
+  -webkit-transition: opacity 0.25s ease-in-out;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 37.5em) {
+    max-width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    padding: 0.5em 1.5em;
+    background-color: $light-grey;
+    background-image: linear-gradient(top, rgba($lightest-grey, 0.5), rgba($grey, 0.5));
+    color: inherit;
+    text-decoration: none;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba($darkest-grey, 0.25);
+    cursor: grab;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+      background-color: $lightest-grey;
+    }
+
+    &:active {
+      transition: none;
+      background-color: $grey;
+    }
+  }
+}
+
+.label-name {
+  display: none;
+}
+
+
+
+
+
+/* ---------------------------------------- *\
+
+    BRAND COLOURS
+
+\* ---------------------------------------- */
+
+$brand-colors:
+  "amazon"           #e47911,
+  "appnet"           #737373,
+  "bitly"            #ef6321,
+  "blogger"          #ffa552,
+  "boxee"            #84b542,
+  "buffer"           #529c31,
+  "codepen"          #383839,
+  "delicious"        #205cc0,
+  "digg"             #000008,
+  "dribbble"         #ea4c89,
+  "evernote"         #5ba525,
+  "facebook"         #3b5998,
+  "feedly"           #6cc655,
+  "ffffound"         #ff009c,
+  "fivehundredpx"    #02adea,
+  "forrst"           #5b9a68,
+  "foursquare"       #25a0ca,
+  "gimmebar"         #f70078,
+  "gist"             #ffa54a,
+  "github"           #4183c4,
+  "googleplus"       #db4a39,
+  "hackernews"       #ff6600,
+  "huffduffer"       #336699,
+  "icebergs"         #00c6f9,
+  "instagram"        #3f729b,
+  "instapaper"       #000000,
+  "kippt"            #e03500,
+  "lastfm"           #c3000d,
+  "linkedin"         #0e76a8,
+  "pinboard"         #0000e6,
+  "pinterest"        #c8232c,
+  "pocket"           #ee4056,
+  "pulse"            #63ceff,
+  "quora"            #ad2100,
+  "quotefm"          #66ceff,
+  "readability"      #9c0000,
+  "reddit"           #ff4200,
+  "rememberthemilk"  #005abd,
+  "storify"          #009cce,
+  "stumbleupon"      #f74425,
+  "subtlepatterns"   #4abd63,
+  "telly"            #638c9c,
+  "tumblr"           #34526f,
+  "twitter"          #00a0d1,
+  "weheartit"        #ff8cad,
+  "zootool"          #5e8b1d;
+
+@each $brand in $brand-colors {
+  .#{nth($brand, 1)} {
+    background-color: #{nth($brand, 2)};
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "network": "foursquare",
+  "category": "social",
+  "bookmarklets": {
+    "Save": "javascript:(function(){(window.___fourSq=window.___fourSq||{}).version='1358235720059';var a=document.createElement('script');a.type='text/javascript';a.src='https://platform-s.foursquare.com/js/modules/widgets.bookmarklet.js';(document.head||document.body).appendChild(a)})();void(0);"
+  }
+}

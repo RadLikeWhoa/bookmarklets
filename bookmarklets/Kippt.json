@@ -1,0 +1,7 @@
+{
+  "network": "Kippt",
+  "category": "productivity",
+  "bookmarklets": {
+    "Add": "javascript:(function()%7Bvar%20w%3Dwindow.open(%27https://kippt.com/extensions/new/%3Furl%3D%27%2BencodeURIComponent(document.location.href)%2B%27%26title%3D%27%2BencodeURIComponent(document.title)%2B%27%26source%3Dbp1%26notes%3D%27%2BencodeURIComponent(%27%27%2B(window.getSelection%3Fwindow.getSelection():document.getSelection%3Fdocument.getSelection():document.selection.createRange().text)),%27kippt%27,%27width%3D420,height%3D240,location%3D0,links%3D0,scrollbars%3D0,toolbar%3D0%27)%3B%20if(w)setTimeout(function()%7Bw.focus()%7D,100)%3Belse%7Balert(%27It%20seems%20that%20you%20have%20a%20popup%20blocker.%20Please,%20hold%20the%20CTRL-key%20and%20try%20again.%27)%7D%7D)()%3B"
+  }
+}

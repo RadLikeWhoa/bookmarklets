@@ -1,0 +1,8 @@
+{
+  "network": "Google+",
+  "className": "googleplus",
+  "category": "social",
+  "bookmarklets": {
+    "Share": "javascript:void(window.open(%22https://plus.google.com/share?url=%22+encodeURIComponent(location),%20%22Share%20to%20Google+%22,%22width=600,height=460,menubar=no,location=no,status=no%22));"
+  }
+}

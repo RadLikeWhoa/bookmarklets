@@ -1,0 +1,7 @@
+{
+  "network": "Digg",
+  "category": "news",
+  "bookmarklets": {
+    "Share": "javascript:(function(){window.ndb=window.ndb||{};var%20a=%22http://digg.com/submit/?url=%22+document.location.href;W=800,d=600;Z=screen.height;Y=screen.width;X=Math.round((Y/2)-(W/2));c=0;if(Z>Y){c=Math.round((C/2)-(A/2))}window.ndb.shareWin=window.open(a,%22the_new_digg_button%22,%22left=%22+X+%22,top=%22+c+%22,width=%22+W+%22,height=%22+d+%22,personalbar=0,toolbar=0,scrollbars=1,resizable=1%22)}());"
+  }
+}

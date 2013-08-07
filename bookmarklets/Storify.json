@@ -1,0 +1,7 @@
+{
+  "network": "Storify",
+  "category": "news",
+  "bookmarklets": {
+    "Storify this": "javascript:(function()%7Bvar%20p=window.location.protocol;p=(p[0]=='f')?'http:':p;var%20_my_script=document.createElement('SCRIPT');%20_my_script.type='text/javascript';%20_my_script.src=p+'//storify.com/public/js/bookmarklet.js?1.9.0';%20document.getElementsByTagName('head')%5B0%5D.appendChild(_my_script);%7D());"
+  }
+}

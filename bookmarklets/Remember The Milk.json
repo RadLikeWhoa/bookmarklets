@@ -1,0 +1,7 @@
+{
+  "network": "Remember the Milk",
+  "category": "productivity",
+  "bookmarklets": {
+    "Add": "javascript:(function(){h='www.rememberthemilk.com';p='/services/ext/addtask.rtm';if(window.getSelection){d=window.getSelection();}else if(document.getSelection){d=document.getSelection();}else if(document.selection){d=document.selection.createRange().text;};cp='http://'+h+p+'?d='+encodeURIComponent(d)+'&t='+encodeURIComponent(document.title);w=window.open(cp,'addwindow','status=no,toolbar=no,width=475,height=260,resizable=yes');setTimeout(function(){w.focus();}, 500);})();"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "network": "Quote.fm",
+  "category": "news",
+  "bookmarklets": {
+    "Send to Quote.fm": "javascript:(function(){var d=document;var s=d.createElement('scr'+'ipt');s.setAttribute('type','text/javascript');s.setAttribute('src','https://quote.fm/site/bookmarklet');d.body.appendChild(s);})()"
+  }
+}

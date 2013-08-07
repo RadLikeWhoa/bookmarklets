@@ -1,0 +1,8 @@
+{
+  "network": "Gist",
+  "category": "productivity",
+  "bookmarklets": {
+    "View dabblet": "javascript:(function(){var a=window.location;'gist.github.com'===a.host?a.href='http://dabblet.com/gist/'+a.href.split('/').pop():alert('You are not on gist.github.com')}()",
+    "View SassMeister": "javascript:(function(){var a=window.location;'gist.github.com'===a.host?a.href='http://sassmeister.com/gist'+a.pathname:alert('You are not on gist.github.com')}())"
+  }
+}

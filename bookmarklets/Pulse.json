@@ -1,0 +1,7 @@
+{
+  "network": "Pulse",
+  "category": "news",
+  "bookmarklets": {
+    "Save": "javascript:void function(){var a=document.createElement('script');a.setAttribute('src','http://www.pulse.me/bookmarklet/bookmarklet-v3.js');a.setAttribute('id','pulse');document.body.appendChild(a);document.getElementById('pulse').onload=function(){bookmarkPage('http://www.pulse.me')}}();"
+  }
+}

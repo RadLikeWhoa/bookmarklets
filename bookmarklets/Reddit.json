@@ -1,0 +1,8 @@
+{
+  "network": "Reddit",
+  "category": "social",
+  "bookmarklets": {
+    "Toolbar": "javascript:%20var%20h%20=%20window.location.href;%20h%20=%20'http://www.reddit.com/s/'%20+%20escape(h);%20window.location%20=%20h;",
+    "Submit": "javascript:location.href='http://www.reddit.com/submit?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)"
+  }
+}
