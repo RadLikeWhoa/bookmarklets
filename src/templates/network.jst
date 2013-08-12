@@ -1,6 +1,6 @@
 <li class="network <%= b.className || b.network.toLowerCase().replace(/[\s\.]/g, '') %>" data-category="<%= b.category.toLowerCase() %>">
   <h2 class="network__name"><%= b.network %></h2>
-  <ul class="bookmarklets">
+  <ul class="bookmarklets unstyled">
     <% _.each(b.bookmarklets, function (url, label) { %>
       <%= JST.bookmarklet({ network: b.network, label: label, url: url }) %>
     <% }) %>

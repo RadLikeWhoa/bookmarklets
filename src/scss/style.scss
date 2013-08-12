@@ -1,19 +1,16 @@
-@import "compass";
-
-/* ---------------------------------------- *\
-
-    VARIABLES
-
-\* ---------------------------------------- */
+// ================================= //
+// COLOURS                           //
+// ================================= //
 
 $red: #a32c28;
-
-$lightest-grey: #F0EFF4;
-$light-grey: #ddd;
+$light-grey: #f2f2f2;
 $grey: #ccc;
 $dark-grey: #222;
 $darkest-grey: #141414;
-$black: #000;
+
+// ================================= //
+// PLACEHOLDER SELECTORS             //
+// ================================= //
 
 %clearfix::after {
   content: "";
@@ -21,15 +18,21 @@ $black: #000;
   clear: both;
 }
 
+// ================================= //
+// BREAKPOINTS                       //
+// ================================= //
 
+$medium-breakpoint: 35em;
 
+@mixin at-least ($min-width: 35em) {
+  @media (min-width: $min-width) {
+    @content;
+  }
+}
 
-
-/* ---------------------------------------- *\
-
-    WEB FONTS
-
-\* ---------------------------------------- */
+// ================================= //
+// FONTS                             //
+// ================================= //
 
 @font-face {
   font-family: 'Source Sans Pro';
@@ -45,15 +48,19 @@ $black: #000;
   src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
 }
 
+// ================================= //
+// HELPER STYLES                     //
+// ================================= //
 
+/*ul*/.unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-
-
-/* ---------------------------------------- *\
-
-    GENERIC ELEMENTS
-
-\* ---------------------------------------- */
+// ================================= //
+// GENERIC STYLES                    //
+// ================================= //
 
 * {
   box-sizing: border-box;
@@ -63,7 +70,12 @@ body {
   margin: 0 0 3em;
   font: #{100%}/#{1.5} "Source Sans Pro", sans-serif;
   color: $dark-grey;
-  background-color: $lightest-grey;
+  background-color: $light-grey;
+
+  @include at-least($medium-breakpoint) {
+    margin-bottom: 4.5em;
+    font-size: 112.5%;
+  }
 }
 
 p {
@@ -87,23 +99,21 @@ a {
 }
 
 .wrap {
-  max-width: 50em;
+  max-width: 55em;
   margin: 0 auto;
 }
 
-
-
-
-
-/* ---------------------------------------- *\
-
-    HEADER
-
-\* ---------------------------------------- */
+// ================================= //
+// SITE HEADER                       //
+// ================================= //
 
 .site-header {
-  padding: 4.5em 1.5em;
+  padding: 3em 1.5em;
   text-align: center;
+
+  @include at-least($medium-breakpoint) {
+    padding: 4.5em 1.5em;
+  }
 }
 
 .site-heading {
@@ -118,7 +128,7 @@ a {
   width: 100%;
   min-height: 3em;
   padding: 0.5em;
-  margin: 0 auto 4.5em;
+  margin: 0 auto 3em;
   font: inherit;
   border: 1px solid rgba($grey, 0.6);
   border-radius: 5px;
@@ -130,52 +140,52 @@ a {
     max-width: 30em;
     box-shadow: 0 1px 2px rgba($darkest-grey, 0.15) inset;
   }
+
+  @include at-least($medium-breakpoint) {
+    margin: 0 auto 4.5em;
+  }
 }
 
 .site-nav {
-  ul {
-    @extend %clearfix;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  @extend %clearfix;
+
+  li:last-child a {
+    border-bottom: 5px solid $grey;
   }
 
-  li {
-    float: left;
-    width: 33.333%;
+  @include at-least($medium-breakpoint) {
+    li {
+      float: left;
+      width: 33.333%;
 
-    &:first-child a {
-      margin-left: 0;
-    }
+      &:first-child a {
+       margin-left: 0;
+      }
 
-    &:last-child a {
-      margin-right: 0;
+      &:last-child a {
+       margin-right: 0;
+      }
     }
   }
 
   a {
     display: block;
     padding: 0.75em;
-    margin: 0 0.5em;
     border-top: 5px solid $grey;
-    border-bottom: 5px solid $grey;
+
+    @include at-least($medium-breakpoint) {
+      margin: 0 0.5em;
+      border-bottom: 5px solid $grey;
+    }
   }
 }
 
+// ================================= //
+// NETWORKS                          //
+// ================================= //
 
-
-
-
-/* ---------------------------------------- *\
-
-    NETWORKS
-
-\* ---------------------------------------- */
-
-.networks {
+.main {
   padding: 0 1.5em;
-  margin: 0;
-  list-style-type: none;
 }
 
 .network {
@@ -204,42 +214,29 @@ a {
   text-overflow: ellipsis;
 }
 
-
-
-
-
-/* ---------------------------------------- *\
-
-    BOOKMARKLETS
-
-\* ---------------------------------------- */
-
-.bookmarklets {
-  padding-left: 0;
-  text-align: center;
-  list-style-type: none;
-}
+// ================================= //
+// BOOKMARKLETS                      //
+// ================================= //
 
 .bookmarklet {
   margin: 1em 0;
-  -webkit-transition: opacity 0.25s ease-in-out;
+  text-align: center;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  @media (min-width: 37.5em) {
+  @include at-least($medium-breakpoint) {
     max-width: 18em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1em auto;
   }
 
   a {
     position: relative;
     display: block;
     padding: 0.5em 1.5em;
-    background-color: $light-grey;
-    background-image: linear-gradient(top, rgba($lightest-grey, 0.5), rgba($grey, 0.5));
+    background-color: #ddd;
+    background-image: linear-gradient(top, rgba($light-grey, 0.5), rgba($grey, 0.5));
     color: inherit;
     text-decoration: none;
     border: 0;
@@ -249,7 +246,7 @@ a {
     transition: background-color 0.25s ease-in-out;
 
     &:hover {
-      background-color: $lightest-grey;
+      background-color: $light-grey;
     }
 
     &:active {
@@ -260,20 +257,59 @@ a {
 }
 
 .label-name {
-  display: none;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
 }
 
+// ================================= //
+// OUTRO                             //
+// ================================= //
 
+.outro {
+  padding: 3em 2.5em 0;
+  margin-top: 3em;
+  border-top: 5px solid $grey;
 
+  @include at-least($medium-breakpoint) {
+    padding-top: 4.5em;
+    margin-top: 4.5em;
+  }
+}
 
+.section-heading {
+  margin-top: 0;
+}
 
-/* ---------------------------------------- *\
+// IMPROVE!
 
-    BRAND COLOURS
+.instruction-list dt {
+  padding: 0.75em 0;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #ccc;
+}
 
-\* ---------------------------------------- */
+.instruction-list dd + dt {
+  margin-top: 1.5em;
+}
 
-$brand-colors:
+.instruction-list dd {
+  margin: 0;
+}
+
+.instruction-list dd ul {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+// ================================= //
+// BRAND COLOURS                     //
+// ================================= //
+
+$brand-colours:
   "amazon"           #e47911,
   "appnet"           #737373,
   "bitly"            #ef6321,
@@ -321,7 +357,7 @@ $brand-colors:
   "weheartit"        #ff8cad,
   "zootool"          #5e8b1d;
 
-@each $brand in $brand-colors {
+@each $brand in $brand-colours {
   .#{nth($brand, 1)} {
     background-color: #{nth($brand, 2)};
   }

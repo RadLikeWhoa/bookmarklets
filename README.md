@@ -1,6 +1,6 @@
 # [bookmarklets](http://radlikewhoa.github.io/bookmarklets)
 
-Bookmarklets are awesome. The sit in your favourites quietly without hogging any resources and they're quick to add and even quicker to use. They provide a wide variety of features on all kinds of sites. But some sites make it terribly hard to find their bookmarklets, others don't even officially provide one. That's why I created this site. This is a place to find bookmarklets for your favourite websites, be it social media sites like Twitter, Facebook or Tumblr, or sites like GitHub, Gist, and Zootool.
+Bookmarklets are awesome. They sit in your favourites quietly without hogging any resources and they're quick to add and even quicker to use. They provide a wide variety of features on all kinds of sites. But some sites make it terribly hard to find their bookmarklets, others don't even officially provide one. That's why I created this site. This is a place to find bookmarklets for your favourite websites, be it social media sites like Twitter, Facebook or Tumblr, or sites like GitHub, Gist, and Zootool.
 
 It's as simple as dragging and dropping a bookmarklet to your bookmarks bar. You can instantly recognize exactly which bookmarklet is which, as they're saved as "Network: Action". This is great for organising your bookmarklets and you'll be a pro in using them in no time.
 
