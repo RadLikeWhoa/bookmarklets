@@ -1,0 +1,9 @@
+{
+  "network": "Telly",
+  "category": "social",
+  "color": "#638c9c",
+  "bookmarklets": [{
+    "name": "Post",
+    "code": "javascript:if(top[%22bookmarkletv2-telly.com%22])top[%22bookmarkletv2-telly.com%22];else{(function(){var server=%22telly.com%22;(function(){var f=%22http:%2F%2F%22+server+%22%2F?s=bookmarklet&url=%22+encodeURIComponent(window.location.href)+%22&title=%22+encodeURIComponent(document.title)+%22&notes=%22+encodeURIComponent(%22%22+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text))+%22&utm_source=%22+location.href.match(%2F([\\w]-*[\\w]+)*(\\.([\\w]-*[\\w]+)*)+%2Fgi)+%22&utm_medium=bookmarkv2%22+%22&utm_campaign=bookmark%22+%22&v=2&%22;var a=function(){if(!window.open(f,%22telly-bookmarklet-v2%22,%22location=1,links=0,scrollbars=0,toolbar=0,status=0,resizable=1,width=710,height=660%22))location.href=f};if(%2FFirefox%2F.test(navigator.userAgent))setTimeout(a,0);else a()})()(function(){var e=document.createElement(%22script%22);var p=location.protocol==%22https:%22?%22https:%22:%22http:%22;e.setAttribute(%22type%22,%22text%2Fjavascript%22);e.setAttribute(%22charset%22,%22UTF-8%22);e.setAttribute(%22src%22,p+%22%2F%2F%22+server+%22%2Fv3%2Fjs%2Fbookmarklet.js?r=%22+(new Date).getTime());document.body.appendChild(e)}())})();void 0};"
+  }]
+}

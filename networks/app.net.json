@@ -1,0 +1,9 @@
+{
+  "network": "app.net",
+  "category": "social",
+  "color": "#737373",
+  "bookmarklets": [{
+    "name": "Share",
+    "code": "javascript:(function(a){var b=a.createElement('script');b.setAttribute('src','https://del05f65do1od.cloudfront.net/static/gen/bookmarklet.js?21ca9a86?r='+99999999*Math.random());a.body.appendChild(b)})(document)"
+  }]
+}

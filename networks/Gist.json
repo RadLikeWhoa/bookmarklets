@@ -1,0 +1,12 @@
+{
+  "network": "Gist",
+  "category": "productivity",
+  "color": "#ffa54a",
+  "bookmarklets": [{
+    "name": "View dabblet",
+    "code": "javascript:(function(){var a=window.location;'gist.github.com'===a.host?a.href='http://dabblet.com/gist/'+a.href.split('/').pop():alert('You are not on gist.github.com')}()"
+  },{
+    "name": "View SassMeister",
+    "code": "javascript:(function(){var a=window.location;'gist.github.com'===a.host?a.href='http://sassmeister.com/gist'+a.pathname:alert('You are not on gist.github.com')}())"
+  }]
+}

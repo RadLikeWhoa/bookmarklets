@@ -1,0 +1,9 @@
+{
+  "network": "Delicious",
+  "category": "social",
+  "color": "#205cc0",
+  "bookmarklets": [{
+    "name": "Add",
+    "code": "javascript:(function(){function%20f(i){if(i.origin!==e+%22%22+n&&i.origin!==t+%22%22+n){return}if(i.data===%22destroy_bookmarklet%22){var%20s=document.getElementById(r);if(s){document.body.removeChild(s);s=null}}}var%20e=%22http://%22,t=%22https://%22,n=%22delicious.com%22,r=%22DELI_bookmarklet_iframe%22,i=document.getElementById(r);if(i){return}var%20s=e+%22%22+n+%22/save?%22,o=document.createElement(%22iframe%22);o.id=r;o.src=s+%22url=%22+encodeURIComponent(window.location.href)+%22&title=%22+encodeURIComponent(document.title)+%22&note=%22+encodeURIComponent(%22%22+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text))+%22&v=1.1%22;o.style.position=%22fixed%22;o.style.top=%220%22;o.style.left=%220%22;o.style.height=%22100%25%22;o.style.width=%22100%25%22;o.style.backgroundColor=%22tranparent%22;o.style.zIndex=%229999999%22;o.style.border=%22none%22;o.style.visibility=%22hidden%22;o.onload=function(){this.style.visibility=%22visible%22};document.body.appendChild(o);var%20u=window.addEventListener?%22addEventListener%22:%22attachEvent%22;var%20a=u==%22attachEvent%22?%22onmessage%22:%22message%22;window[u](a,f,false)})()"
+  }]
+}

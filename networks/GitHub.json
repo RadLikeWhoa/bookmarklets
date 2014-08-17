@@ -1,0 +1,9 @@
+{
+  "network": "GitHub",
+  "category": "productivity",
+  "color": "#4183c4",
+  "bookmarklets": [{
+    "name": "Search",
+    "code": "javascript:var%20query%20=%20prompt(%22Search%20GitHub.com%22);user_search_ary%20=%20/%5Eu:(.*)/g.exec(query);if%20(user_search_ary)%20%7Bwindow.location%20=%20%22http://github.com/%22%20+%20user_search_ary%5B1%5D;%7Delse%20if%20(query)%20%7Bwindow.location%20=%20%22http://github.com/search?q=%22%20+%20query;%7D"
+  }]
+}

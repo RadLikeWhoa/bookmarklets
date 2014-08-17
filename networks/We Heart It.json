@@ -1,0 +1,9 @@
+{
+  "network": "We Heart It",
+  "category": "social",
+  "color": "#ff8cad",
+  "bookmarklets": [{
+    "name": "Heart",
+    "code": "javascript:void((function(){var%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://weheartit.com/bookmarklet.js');document.body.appendChild(e)})());"
+  }]
+}

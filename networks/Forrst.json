@@ -1,0 +1,9 @@
+{
+  "network": "Forrst",
+  "category": "social",
+  "color": "#5b9a68",
+  "bookmarklets": [{
+    "name": "Share",
+    "code": "javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://forrst.com/posts/new',l=d.location,e=encodeURIComponent,p='?b=1&v=5&u='+e(l.href) +'&t='+e(d.title) +'&s='+e(s),u=f+p;try{if(!/^(.*\\.)?forrst[^.]*$/.test(l.host))throw(0);tstbklt();}catch(z){a =function(){if(!w.open(u,'t','toolbar=0,resizable=0,status=1,width=765,height=650,scrollbars=1'))l.href=u;};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();}void(0)"
+  }]
+}

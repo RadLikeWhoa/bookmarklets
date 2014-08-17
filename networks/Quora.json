@@ -1,0 +1,9 @@
+{
+  "network": "Quora",
+  "category": "social",
+  "color": "#ad2100",
+  "bookmarklets": [{
+    "name": "Share",
+    "code": "javascript:var%20d%3Ddocument,w%3Dwindow,e%3Dw.getSelection,k%3Dd.getSelection,x%3Dd.selection,s%3D(e%3Fe():(k)%3Fk():(x%3Fx.createRange().text:0)),f%3D%27http://www.quora.com/board/bookmarklet%27,l%3Dd.location,e%3DencodeURIComponent,p%3D%27%3Fv%3D1%26url%3D%27%2Be(l.href),u%3Df%2Bp%3Btry%7Bif(!/%5E(.*%5C.)%3Fquora%5B%5E.%5D*%24/.test(l.host))throw(0)%3B%7Dcatch(z)%7Ba%20%3Dfunction()%7Bif(!w.open(u,%27_blank%27,%27toolbar%3D0,scrollbars%3Dno,resizable%3D1,status%3D1,width%3D430,height%3D400%27))l.href%3Du%3B%7D%3Bif(/Firefox/.test(navigator.userAgent))setTimeout(a,0)%3Belse%20a()%3B%7Dvoid(0)"
+  }]
+}

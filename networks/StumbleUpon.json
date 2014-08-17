@@ -1,0 +1,9 @@
+{
+  "network": "StumbleUpon",
+  "category": "social",
+  "color": "#f74425",
+  "bookmarklets": [{
+    "name": "Stumble",
+    "code": "javascript:document.location.href='http://www.stumbleupon.com/submit?url='+document.URL+'&title='+document.title.replace(/%20/g,'+');"
+  }]
+}
