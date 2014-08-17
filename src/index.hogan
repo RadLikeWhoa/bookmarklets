@@ -37,6 +37,28 @@
         {{/networks}}
       </ul>
     </section>
+    <section id="about">
+      <div class="wrap">
+        <h2>About this site</h2>
+        <p>Bookmarklets are awesome. The sit in your favourites quietly without hogging any resources and they're quick to add and even quicker to use. They provide a wide variety of features on all kinds of sites. But some sites make it terribly hard to find their bookmarklets, others don't even officially provide one. That's why I created this site. This is a place to find bookmarklets for your favourite websites, be it social media sites like Twitter, Facebook or Tumblr, or sites like GitHub, Gist, and Zootool.</p>
+        <p>It's as simple as dragging and dropping a bookmarklet to your bookmarks bar. You can instantly recognize exactly which bookmarklet is which, as they're saved as "Network: Action". This is great for organising your bookmarklets and you'll be a pro in using them in no time.</p>
+        <p>It's really easy to add new entries. Just follow the documentation in the GitHub repo.</p>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>Instructions</h2>
+        <h3>Desktop</h3>
+        <ul>
+          <li>Drag-and-drop a bookmarklet to your favourites bar or to the folder you want to add it to.</li>
+          <li>Right-click a bookmarklet and choose "Add to favourites" (this may vary in different browsers). Then choose the location you want to add the bookmarklet to.</li>
+        </ul>
+        <h3>Mobile</h3>
+        <p>On an iOS device, you'll have to take a couple of steps. First, tap and hold a bookmarklet and then choose "Copy". Then, add this entire page to your bookmarks. Next you'll have to open up the bookmarks menu and look for the just-added page. Edit this bookmark by setting the title to the bookmarklet's label and the URL to the code you copied initially.</p>
+    </section>
+    <footer class="site-footer">
+      <div class="wrap">bookmarklets is a project by Sacha Schmid.</div>
+    </footer>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

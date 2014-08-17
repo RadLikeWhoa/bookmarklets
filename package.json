@@ -5,14 +5,18 @@
   "homepage": "http://sachaschmid.ch/bookmarklets",
   "repository": "git://github.com/radlikewhoa/bookmarklets.git",
   "author": "Sacha Schmid (http://sachaschmid.ch/)",
-  "dependencies": {
-    "express": "^4.8.4",
-    "hbs": "^2.7.0"
-  },
   "devDependencies": {
+    "connect-livereload": "^0.4.0",
+    "express": "^4.8.4",
     "gulp": "^3.8.7",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-csso": "^0.2.9",
     "gulp-hogan": "0.0.1",
-    "gulp-rename": "^1.2.0"
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-uglify": "^0.3.1",
+    "opn": "^1.0.0",
+    "tiny-lr": "^0.1.0"
   },
   "license": "MIT"
 }
