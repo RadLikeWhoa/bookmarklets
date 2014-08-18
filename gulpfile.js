@@ -5,6 +5,7 @@ var sass = require('gulp-ruby-sass')
 var autoprefixer = require('gulp-autoprefixer')
 var csso = require('gulp-csso')
 var uglify = require('gulp-uglify')
+var concat = require('gulp-concat')
 
 var lr
 var networks = require('./networks')
@@ -36,7 +37,8 @@ gulp.task('styles', function () {
 })
 
 gulp.task('scripts', function () {
-  return gulp.src('src/js/**/*.js')
+  return gulp.src([ 'bower_components/listjs/dist/list.js', 'src/js/**/*.js' ])
+    .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('assets/js'))
 })
