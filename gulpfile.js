@@ -1,6 +1,5 @@
 var gulp = require('gulp')
-var hogan = require('gulp-hogan')
-var rename = require('gulp-rename')
+var mustache = require('gulp-mustache')
 var sass = require('gulp-ruby-sass')
 var autoprefixer = require('gulp-autoprefixer')
 var csso = require('gulp-csso')
@@ -21,9 +20,8 @@ function notifyLivereload (event) {
 }
 
 gulp.task('views', function () {
-  return gulp.src('src/index.hogan')
-    .pipe(hogan({ networks: networks.networkList }))
-    .pipe(rename('index.html'))
+  return gulp.src('src/index.mustache')
+    .pipe(mustache({ networks: networks.networkList }, { extension: '.html' }))
     .pipe(gulp.dest('.'))
 })
 
@@ -58,7 +56,7 @@ gulp.task('webserver', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('src/**/*.hogan', [ 'views' ])
+  gulp.watch('src/**/*.mustache', [ 'views' ])
   gulp.watch('src/scss/**/*.scss', [ 'styles' ])
   gulp.watch('src/js/**/*.js', [ 'scripts' ])
   gulp.watch('**/*.html', notifyLivereload)
