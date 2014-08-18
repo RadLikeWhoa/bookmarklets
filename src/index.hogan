@@ -11,7 +11,7 @@
     <header class="site-header">
       <div class="wrap">
         <h1 id="mainHeading" class="site-heading">Bookmarklets</h1>
-        <p>This is a curated list of useful bookmarklets for all kinds of services. Find out how to install them <a href="">on desktop</a> or <a href="">on mobile</a>. Created and curated by <a href="">Sacha Schmid</a>.</p>
+        <p>This is a curated list of useful bookmarklets for all kinds of services. Find out how to install them <a href="https://support.mozilla.org/en-US/kb/bookmarklets-perform-common-web-page-tasks#w_how-do-i-install-a-bookmarklet">on desktop</a> or <a href="http://lifehacker.com/5969040/quickly-add-useful-bookmarklets-to-safari-for-ios-to-instantly-send-pages-evernote-pocket-and-more">on mobile</a>. Created and curated by <a href="http://sachaschmid.ch">Sacha Schmid</a>, this list is <a href="http://github.com/radlikewhoa/bookmarklets">available on GitHub</a> to edit and expand.</p>
       </div>
     </header>
     <section id="network-list">

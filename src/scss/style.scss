@@ -62,10 +62,6 @@ a {
 .site-header {
   padding: 3em 1.5em 1.5em;
   text-align: center;
-
-  p {
-    text-align: left;
-  }
 }
 
 .site-heading {
@@ -100,7 +96,8 @@ a {
   font: inherit;
   text-align: center;
   border: 1px solid rgba($grey, 0.6);
-  appearance: none;
+  border-radius: 0;
+  -webkit-appearance: none;
   cursor: pointer;
   transition: border-color 0.15s ease-in-out;
   outline: none;
