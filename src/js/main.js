@@ -1,20 +1,22 @@
-var _touch = 'ontouchstart' in window,
-    _links = document.querySelectorAll('.bookmarklet a')
+var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent),
+    touch = 'ontouchstart' in window,
+    links = document.querySelectorAll('.bookmarklet a'),
+    len = links.length
 
-/*function _bindUIActions () {
-  _.each(_links, function (link) {
-    link.addEventListener('click', function (e) {
-      alert(_touch ? 'Please tap and hold the bookmarklet to add it to your bookmarks.' : 'Please drag the bookmarklet to the bookmarks bar.')
-      e.preventDefault()
-    })
-  })
-}*/
-
-if (_touch) {
-  document.body.classList.add('touch')
+function handleBookmarkletClick (e) {
+  alert(touch ? 'Please tap and hold the bookmarklet to add it to your bookmarks.' : 'Please drag the bookmarklet to the bookmarks bar.')
+  e.preventDefault()
 }
 
-// _bindUIActions()
+while (len--) {
+  var link = links[len]
+
+  if (iOS) {
+    link.href = window.location + '#' + link.href
+  }
+
+  link.addEventListener('click', handleBookmarkletClick)
+}
 
 var list = new List('network-list', { valueNames: [ 'network__name' ] })
 
