@@ -21,7 +21,7 @@
       </div>
     </header>
     <section id="network-list">
-      <input id="search" class="search" type="search" placeholder="Search by name or by category">
+      <input id="search" class="search" type="search" placeholder="Search by network name">
       <ul class="networks js-networks list">
         {{#networks}}
           <li class="network" data-category="{{ category }}" style="background-color: {{ color }}">

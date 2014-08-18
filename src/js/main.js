@@ -16,4 +16,4 @@ if (_touch) {
 
 // _bindUIActions()
 
-new List('network-list', { valueNames: [ 'network__name' ] })
+var list = new List('network-list', { valueNames: [ 'network__name' ] })

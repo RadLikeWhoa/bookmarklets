@@ -13,4 +13,11 @@ for (var i = 0, j = networkFiles.length; i < j; i++) {
   networks.push(network)
 }
 
+networks = networks.sort(function (a, b) {
+  a = a.network.toLowerCase()
+  b = b.network.toLowerCase()
+
+  return a < b ? -1 : a > b ? 1 : 0
+})
+
 exports.networkList = networks

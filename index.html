@@ -21,7 +21,7 @@
       </div>
     </header>
     <section id="network-list">
-      <input id="search" class="search" type="search" placeholder="Search by name or by category">
+      <input id="search" class="search" type="search" placeholder="Search by network name">
       <ul class="networks js-networks list">
           <li class="network" data-category="social" style="background-color: #02adea">
             <h2 class="network__name">500px</h2>
@@ -36,6 +36,22 @@
             <ul class="bookmarklets">
                 <li class="bookmarklet">
                   <a href="javascript:(function(b,a){var d=b.location,c=a.createElement(&#39;script&#39;),e=encodeURIComponent,g=setTimeout,h=function(){a.readyState&amp;&amp;&#39;complete&#39;!=a.readyState?g(h,200):b.AUWLBook?f():(c.setAttribute(&#39;charset&#39;,&#39;UTF-8&#39;),c.setAttribute(&#39;src&#39;,&#39;https://www.amazon.com/wishlist/add.js?ext=ipad&amp;loc=&#39;+e(d)),a.body.appendChild(c),f())},f=function(){b.AUWLBook?b.AUWLBook.showPopover():g(f,200)};&#39;object&#39;!=typeof c?d.href=&#39;https://www.amazon.com/wishlist/add?ext=ipad&amp;u=&#39;+e(d)+&#39;&amp;t=&#39;+e(a.title):h()})(window,document)">Add to Wishlist</a>
+                </li>
+            </ul>
+          </li>
+          <li class="network" data-category="social" style="background-color: #737373">
+            <h2 class="network__name">app.net</h2>
+            <ul class="bookmarklets">
+                <li class="bookmarklet">
+                  <a href="javascript:(function(a){var b=a.createElement(&#39;script&#39;);b.setAttribute(&#39;src&#39;,&#39;https://del05f65do1od.cloudfront.net/static/gen/bookmarklet.js?21ca9a86?r=&#39;+99999999*Math.random());a.body.appendChild(b)})(document)">Share</a>
+                </li>
+            </ul>
+          </li>
+          <li class="network" data-category="social" style="background-color: #ef6321">
+            <h2 class="network__name">bitly</h2>
+            <ul class="bookmarklets">
+                <li class="bookmarklet">
+                  <a href="javascript:(function()%20%7B%20var%20s%20=%20document.createElement(%22script%22);%20s.setAttribute(%22id%22,%20%22bitmark_js%22);%20s.setAttribute(%22type%22,%20%22text/javascript%22);%20s.setAttribute(%22src%22,%20%22//bitly.com/a/bitmarklet.js%22);%20(top.document.body%20%7C%7C%20top.document.getElementsByTagName(%22head%22)[0]).appendChild(s);%20%7D)();">Bitmark</a>
                 </li>
             </ul>
           </li>
@@ -109,14 +125,6 @@
                 </li>
             </ul>
           </li>
-          <li class="network" data-category="social" style="background-color: #ff009c">
-            <h2 class="network__name">FFFFOUND</h2>
-            <ul class="bookmarklets">
-                <li class="bookmarklet">
-                  <a href="javascript:void((function(){var%20e=document.createElement(&#39;script&#39;);e.setAttribute(&#39;type&#39;,&#39;text/javascript&#39;);e.setAttribute(&#39;charset&#39;,&#39;UTF-8&#39;);e.setAttribute(&#39;src&#39;,&#39;http://ffffound.com/bookmarklet.js&#39;);document.body.appendChild(e)})());">Add</a>
-                </li>
-            </ul>
-          </li>
           <li class="network" data-category="social" style="background-color: #3b5998">
             <h2 class="network__name">Facebook</h2>
             <ul class="bookmarklets">
@@ -133,11 +141,27 @@
                 </li>
             </ul>
           </li>
+          <li class="network" data-category="social" style="background-color: #ff009c">
+            <h2 class="network__name">FFFFOUND</h2>
+            <ul class="bookmarklets">
+                <li class="bookmarklet">
+                  <a href="javascript:void((function(){var%20e=document.createElement(&#39;script&#39;);e.setAttribute(&#39;type&#39;,&#39;text/javascript&#39;);e.setAttribute(&#39;charset&#39;,&#39;UTF-8&#39;);e.setAttribute(&#39;src&#39;,&#39;http://ffffound.com/bookmarklet.js&#39;);document.body.appendChild(e)})());">Add</a>
+                </li>
+            </ul>
+          </li>
           <li class="network" data-category="social" style="background-color: #5b9a68">
             <h2 class="network__name">Forrst</h2>
             <ul class="bookmarklets">
                 <li class="bookmarklet">
                   <a href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f=&#39;https://forrst.com/posts/new&#39;,l=d.location,e=encodeURIComponent,p=&#39;?b=1&amp;v=5&amp;u=&#39;+e(l.href) +&#39;&amp;t=&#39;+e(d.title) +&#39;&amp;s=&#39;+e(s),u=f+p;try{if(!/^(.*\.)?forrst[^.]*$/.test(l.host))throw(0);tstbklt();}catch(z){a =function(){if(!w.open(u,&#39;t&#39;,&#39;toolbar=0,resizable=0,status=1,width=765,height=650,scrollbars=1&#39;))l.href=u;};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();}void(0)">Share</a>
+                </li>
+            </ul>
+          </li>
+          <li class="network" data-category="social" style="background-color: #25a0ca">
+            <h2 class="network__name">foursquare</h2>
+            <ul class="bookmarklets">
+                <li class="bookmarklet">
+                  <a href="javascript:(function(){(window.___fourSq=window.___fourSq||{}).version=&#39;1358235720059&#39;;var a=document.createElement(&#39;script&#39;);a.type=&#39;text/javascript&#39;;a.src=&#39;https://platform-s.foursquare.com/js/modules/widgets.bookmarklet.js&#39;;(document.head||document.body).appendChild(a)})();void(0);">Save</a>
                 </li>
             </ul>
           </li>
@@ -391,30 +415,6 @@
                 </li>
                 <li class="bookmarklet">
                   <a href="javascript:void(function(){var w = 430; var h = 400; var t = (screen.height ? (screen.height - h) / 4 : 0); var l = (screen.width ? (screen.width - w) / 2 : 0); var win = window.open(&#39;http://zootool.com/aquarium/&#39;,&#39;zt-aquarium&#39;,&#39;width=&#39;+w+&#39;,height=&#39;+h+&#39;,top=&#39;+t+&#39;,left=&#39;+l+&#39;,location=no,personalbar=no,menubar=no,status=no,resizable=yes,scrollbars=yes&#39;); if(w)setTimeout(function(){w.focus()},250);else{alert(&#39;Ups! You\&#39;ve got an active popup blocker. Hold the CTRL-key and try again.&#39;)}})()">Aquarium</a>
-                </li>
-            </ul>
-          </li>
-          <li class="network" data-category="social" style="background-color: #737373">
-            <h2 class="network__name">app.net</h2>
-            <ul class="bookmarklets">
-                <li class="bookmarklet">
-                  <a href="javascript:(function(a){var b=a.createElement(&#39;script&#39;);b.setAttribute(&#39;src&#39;,&#39;https://del05f65do1od.cloudfront.net/static/gen/bookmarklet.js?21ca9a86?r=&#39;+99999999*Math.random());a.body.appendChild(b)})(document)">Share</a>
-                </li>
-            </ul>
-          </li>
-          <li class="network" data-category="social" style="background-color: #ef6321">
-            <h2 class="network__name">bitly</h2>
-            <ul class="bookmarklets">
-                <li class="bookmarklet">
-                  <a href="javascript:(function()%20%7B%20var%20s%20=%20document.createElement(%22script%22);%20s.setAttribute(%22id%22,%20%22bitmark_js%22);%20s.setAttribute(%22type%22,%20%22text/javascript%22);%20s.setAttribute(%22src%22,%20%22//bitly.com/a/bitmarklet.js%22);%20(top.document.body%20%7C%7C%20top.document.getElementsByTagName(%22head%22)[0]).appendChild(s);%20%7D)();">Bitmark</a>
-                </li>
-            </ul>
-          </li>
-          <li class="network" data-category="social" style="background-color: #25a0ca">
-            <h2 class="network__name">foursquare</h2>
-            <ul class="bookmarklets">
-                <li class="bookmarklet">
-                  <a href="javascript:(function(){(window.___fourSq=window.___fourSq||{}).version=&#39;1358235720059&#39;;var a=document.createElement(&#39;script&#39;);a.type=&#39;text/javascript&#39;;a.src=&#39;https://platform-s.foursquare.com/js/modules/widgets.bookmarklet.js&#39;;(document.head||document.body).appendChild(a)})();void(0);">Save</a>
                 </li>
             </ul>
           </li>
