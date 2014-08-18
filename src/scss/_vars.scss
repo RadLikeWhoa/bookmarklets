@@ -1,0 +1,14 @@
+$highlight: #4ceb89;
+
+$lightest-grey: #F0EFF4;
+$light-grey: #ddd;
+$grey: #ccc;
+$dark-grey: #222;
+$darkest-grey: #141414;
+$black: #000;
+
+$media-queries: (
+  's': '(max-width: 30em)',
+  'm': '(min-width: 30em)',
+  'l': '(min-width: 50em)'
+);

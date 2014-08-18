@@ -17,3 +17,5 @@ if (_touch) {
 // _bindUIActions()
 
 var list = new List('network-list', { valueNames: [ 'network__name' ] })
+
+fitText(document.getElementById('mainHeading'), 0.7)

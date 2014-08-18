@@ -37,7 +37,7 @@ gulp.task('styles', function () {
 })
 
 gulp.task('scripts', function () {
-  return gulp.src([ 'bower_components/listjs/dist/list.js', 'src/js/**/*.js' ])
+  return gulp.src([ 'bower_components/listjs/dist/list.js', 'bower_components/fittext/fittext.js', 'src/js/**/*.js' ])
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('assets/js'))

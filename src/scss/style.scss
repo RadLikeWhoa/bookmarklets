@@ -1,33 +1,12 @@
-/* ---------------------------------------- *\
+@import "vars";
 
-    VARIABLES
-
-\* ---------------------------------------- */
-
-$red: #a32c28;
-
-$lightest-grey: #F0EFF4;
-$light-grey: #ddd;
-$grey: #ccc;
-$dark-grey: #222;
-$darkest-grey: #141414;
-$black: #000;
+@import "media-queries";
 
 %clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-
-
-
-
-
-/* ---------------------------------------- *\
-
-    WEB FONTS
-
-\* ---------------------------------------- */
 
 @font-face {
   font-family: 'Source Sans Pro';
@@ -42,16 +21,6 @@ $black: #000;
   font-weight: 400;
   src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
 }
-
-
-
-
-
-/* ---------------------------------------- *\
-
-    GENERIC ELEMENTS
-
-\* ---------------------------------------- */
 
 * {
   box-sizing: border-box;
@@ -70,17 +39,18 @@ p {
 }
 
 a {
-  color: $red;
-  font-weight: 700;
+  padding-bottom: 1px;
+  color: $highlight;
+  border-bottom: 1px solid;
   text-decoration: none;
   transition: color 0.25s ease-in-out;
 
   &:hover {
-    color: lighten($red, 10%);
+    color: lighten($highlight, 10%);
   }
 
   &:active {
-    color: darken($red, 10%);
+    color: darken($highlight, 10%);
   }
 }
 
@@ -89,44 +59,54 @@ a {
   margin: 0 auto;
 }
 
-
-
-
-
-/* ---------------------------------------- *\
-
-    HEADER
-
-\* ---------------------------------------- */
-
 .site-header {
-  padding: 4.5em 1.5em;
+  padding: 3em 1.5em 1.5em;
   text-align: center;
+
+  p {
+    text-align: left;
+  }
 }
 
 .site-heading {
   margin: 0 0 1.5rem;
   font-size: 2.5em;
-  line-height: 1.2;
+  background-color: hsl(34, 53%, 82%);
+  background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+    hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+    hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+    hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+    hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+    hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+    ),
+  repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+    hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+    hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+    hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+    hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+    hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .search {
+  position: sticky;
+  top: 0;
   display: block;
-  max-width: 25em;
   width: 100%;
-  min-height: 3em;
-  padding: 0.5em;
-  margin: 0 auto 4.5em;
+  padding: 0.75em;
+  margin: 0 auto 3em;
   font: inherit;
+  text-align: center;
   border: 1px solid rgba($grey, 0.6);
-  border-radius: 5px;
   appearance: none;
-  transition: box-shadow 0.25s ease-in-out, max-width 0.25s ease-in-out;
+  cursor: pointer;
+  transition: border-color 0.15s ease-in-out;
   outline: none;
 
   &:focus {
-    max-width: 30em;
-    box-shadow: 0 1px 2px rgba($darkest-grey, 0.15) inset;
+    border-color: #4ceb89;
   }
 }
 
@@ -160,16 +140,6 @@ a {
   }
 }
 
-
-
-
-
-/* ---------------------------------------- *\
-
-    NETWORKS
-
-\* ---------------------------------------- */
-
 .networks {
   padding: 0 1.5em;
   margin: 0;
@@ -202,16 +172,6 @@ a {
   text-overflow: ellipsis;
 }
 
-
-
-
-
-/* ---------------------------------------- *\
-
-    BOOKMARKLETS
-
-\* ---------------------------------------- */
-
 .bookmarklets {
   padding-left: 0;
   text-align: center;
@@ -239,6 +199,7 @@ a {
     background-color: $light-grey;
     background-image: linear-gradient(top, rgba($lightest-grey, 0.5), rgba($grey, 0.5));
     color: inherit;
+    font-weight: bold;
     text-decoration: none;
     border: 0;
     border-radius: 3px;
@@ -255,8 +216,4 @@ a {
       background-color: $grey;
     }
   }
-}
-
-.label-name {
-  display: none;
 }
