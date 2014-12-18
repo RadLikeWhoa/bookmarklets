@@ -1,0 +1,9 @@
+{
+  "network": "Duo",
+  "category": "development",
+  "color": "#919699",
+  "bookmarklets": [{
+    "name": "→ Duo",
+    "code": "javascript:(function()%7BtheURL%3Dlocation.href.replace(%22http%3A%2F%2F%22%2C%22duo%3A%2F%2F%22).replace(%22https%3A%2F%2F%22%2C%22duo%3A%2F%2F%22).replace(%22file%3A%2F%2F%2F%22%2C%22duo%3A%2F%2Ffile%3A%2F%2F%2F%22)%3Blocation.href%3DtheURL%3B%7D)()%3B"
+  }]
+}
