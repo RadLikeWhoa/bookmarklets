@@ -2,7 +2,7 @@ var gulp = require('gulp')
 var mustache = require('gulp-mustache')
 var sass = require('gulp-ruby-sass')
 var autoprefixer = require('gulp-autoprefixer')
-var csso = require('gulp-csso')
+var cssmin = require('gulp-cssmin')
 var uglify = require('gulp-uglify')
 var concat = require('gulp-concat')
 
@@ -30,7 +30,7 @@ gulp.task('styles', function () {
     .pipe(sass())
     .on('error', function (err) { console.log(err.message) })
     .pipe(autoprefixer('last 3 versions'))
-    .pipe(csso())
+    .pipe(cssmin())
     .pipe(gulp.dest('assets/css'))
 })
 
@@ -65,3 +65,4 @@ gulp.task('watch', function () {
 })
 
 gulp.task('default', [ 'views', 'scripts', 'styles', 'webserver', 'watch' ])
+gulp.task('dry', [ 'views', 'scripts', 'styles' ])
