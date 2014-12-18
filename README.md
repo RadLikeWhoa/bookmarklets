@@ -42,3 +42,5 @@ If there is no existing .json file you'll need to add one yourself. Your new fil
 | category     | Your network's category. (e.g. "social", "news")                           |
 | color        | Your network's primary color, or [brand color](http://brandcolors.net).    |
 | bookmarklets | An array representing the network's bookmarklets. Each bookmarklet is an object, consisting of a `name` (the bookmarklet's action) and  a `code` (the bookmarklet's actual code) entry. |
+
+After you've added your new bookmarklet you need to run `gulp dry` (build without preview) or `gulp` (build with preview).
