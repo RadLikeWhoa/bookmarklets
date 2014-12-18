@@ -1,6 +1,6 @@
 var gulp = require('gulp')
 var mustache = require('gulp-mustache')
-var sass = require('gulp-ruby-sass')
+var sass = require('gulp-sass')
 var autoprefixer = require('gulp-autoprefixer')
 var cssmin = require('gulp-cssmin')
 var uglify = require('gulp-uglify')
@@ -27,8 +27,7 @@ gulp.task('views', function () {
 
 gulp.task('styles', function () {
   return gulp.src('src/scss/**/*.scss')
-    .pipe(sass())
-    .on('error', function (err) { console.log(err.message) })
+    .pipe(sass({ errLogToConsole: true }))
     .pipe(autoprefixer('last 3 versions'))
     .pipe(cssmin())
     .pipe(gulp.dest('assets/css'))
