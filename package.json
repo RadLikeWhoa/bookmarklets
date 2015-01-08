@@ -2,9 +2,9 @@
   "name": "bookmarklets",
   "description": "bookmarklets is a curated list of, you guessed it, bookmarklets that are useful on the web.",
   "version": "1.0.0",
-  "homepage": "http://sachaschmid.ch/bookmarklets",
+  "homepage": "http://sacha.me/bookmarklets",
   "repository": "git://github.com/radlikewhoa/bookmarklets.git",
-  "author": "Sacha Schmid (http://sachaschmid.ch/)",
+  "author": "Sacha Schmid (http://sacha.me/)",
   "devDependencies": {
     "connect-livereload": "^0.4.0",
     "express": "^4.8.4",

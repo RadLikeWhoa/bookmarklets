@@ -2,8 +2,8 @@
   "name": "bookmarklets",
   "description": "bookmarklets is a curated list of, you guessed it, bookmarklets that are useful on the web.",
   "version": "1.0.0",
-  "homepage": "https://sachaschmid.ch/bookmarklets",
-  "author": "Sacha Schmid (sachaschmid.ch)",
+  "homepage": "https://sacha.me/bookmarklets",
+  "author": "Sacha Schmid (sacha.me)",
   "license": "MIT",
   "private": true,
   "dependencies": {
