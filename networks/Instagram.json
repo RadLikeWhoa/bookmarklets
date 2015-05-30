@@ -2,6 +2,7 @@
   "network": "Instagram",
   "category": "social",
   "color": "#3f729b",
+  "url": "https://instagram.com",
   "bookmarklets": [{
     "name": "Grid View",
     "code": "javascript:(function(){if (!document.getElementById('webinstagramgridview')){var objHead = document.getElementsByTagName('head'); if (objHead[0]){if (document.createElementNS && objHead[0].tagName == 'head') var objCSS = objHead[0].appendChild(document.createElementNS('http://www.w3.org/1999/xhtml', 'link'));else var objCSS = objHead[0].appendChild(document.createElement('link')); objCSS.id = 'webinstagramgridview'; objCSS.rel = 'stylesheet'; objCSS.href = 'http://christophercochran.me/webinstagramgrid.css'; objCSS.type = 'text/css';}}})()"

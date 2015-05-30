@@ -101,6 +101,7 @@ a {
   cursor: pointer;
   transition: border-color 0.15s ease-in-out;
   outline: none;
+  z-index: 1000;
 
   &:focus {
     border-color: #4ceb89;
@@ -167,6 +168,16 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  a {
+    color: #fff;
+    border-bottom: 3px dashed rgba(255, 255, 255, 0.5);
+    transition: border-bottom-color 0.25s ease-in-out;
+  }
+
+  a:hover {
+    border-bottom-color: #fff;
+  }
 }
 
 .bookmarklets {

@@ -2,6 +2,7 @@
   "network": "Dribbble",
   "category": "social",
   "color": "#ea4c89",
+  "url": "https://dribbble.com",
   "bookmarklets": [{
     "name": "Drafted by...",
     "code": "javascript: if('dribbble.com'==window.location.hostname){var sendURL='http://host.sonspring.com/dribbble/?q=',path=new String(window.location.pathname);if(1<path.indexOf('/',1))var dir=path.substring(1,path.indexOf('/',1));if('players'==dir){var dribbbleUser=path.substring(path.lastIndexOf('/')+1,path.length);location.href=sendURL+dribbbleUser}else if('shots'==dir){var screenshotCode=document.getElementById('screenshot-title-section'),linkArray=screenshotCode.getElementsByTagName('a'),playerURL=new String(linkArray[0]),dribbbleUser=playerURL.substring(playerURL.lastIndexOf('/')+1,playerURL.length);location.href=sendURL+dribbbleUser}};"

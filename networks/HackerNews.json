@@ -2,6 +2,7 @@
   "network": "Hacker News",
   "category": "news",
   "color": "#ff6600",
+  "url": "https://news.ycombinator.com",
   "bookmarklets": [{
     "name": "Post",
     "code": "javascript:(function(){window.location.href=%22http://news.ycombinator.com/submitlink?u=%22+encodeURIComponent(document.location)+%22&t=%22+encodeURIComponent(document.title)})()"

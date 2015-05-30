@@ -2,6 +2,7 @@
   "network": "Reddit",
   "category": "social",
   "color": "#ff4200",
+  "url": "http://reddit.com",
   "bookmarklets": [{
     "name": "Toolbar",
     "code": "javascript:%20var%20h%20=%20window.location.href;%20h%20=%20'http://www.reddit.com/s/'%20+%20escape(h);%20window.location%20=%20h;"

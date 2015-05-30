@@ -2,6 +2,7 @@
   "network": "LinkedIn",
   "category": "social",
   "color": "#0e76a8",
+  "url": "https://linked.in",
   "bookmarklets": [{
     "name": "Share",
     "code": "javascript:(function(){var%20d=document,l=d.location,f='http://www.linkedin.com/shareArticle?mini=true&ro=false&trk=bookmarklet&title='+encodeURIComponent(d.title)+'&url='+encodeURIComponent(l.href),a=function(){if(!window.open(f,'News','width=520,height=570,toolbar=0,location=0,status=0,scrollbars=yes')){l.href=f;}};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0);}else{a();}})()"

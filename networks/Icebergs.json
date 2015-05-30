@@ -1,9 +1,0 @@
-{
-  "network": "Icebergs",
-  "category": "productivity",
-  "color": "#00c6f9",
-  "bookmarklets": [{
-    "name": "Add Icedrop",
-    "code": "javascript: (function () {var a = 'setAttribute';var d = document;var s = d.createElement('script');s[a]('type', 'text/javascript');s[a]('src', 'https://iceber.gs/bookmarklet/iceframe.js');d.body.appendChild(s);})()"
-  }]
-}

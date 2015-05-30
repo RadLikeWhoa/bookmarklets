@@ -2,6 +2,7 @@
   "network": "Amazon",
   "category": "commerce",
   "color": "#e47911",
+  "url": "http://amazon.com",
   "bookmarklets": [{
     "name": "Add to Wishlist",
     "code": "javascript:(function(b,a){var d=b.location,c=a.createElement('script'),e=encodeURIComponent,g=setTimeout,h=function(){a.readyState&&'complete'!=a.readyState?g(h,200):b.AUWLBook?f():(c.setAttribute('charset','UTF-8'),c.setAttribute('src','https://www.amazon.com/wishlist/add.js?ext=ipad&loc='+e(d)),a.body.appendChild(c),f())},f=function(){b.AUWLBook?b.AUWLBook.showPopover():g(f,200)};'object'!=typeof c?d.href='https://www.amazon.com/wishlist/add?ext=ipad&u='+e(d)+'&t='+e(a.title):h()})(window,document)"

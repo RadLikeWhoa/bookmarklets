@@ -2,6 +2,7 @@
   "network": "TinEye",
   "category": "productivity",
   "color": "#426497",
+  "url": "https://tineye.com",
   "bookmarklets": [{
     "name": "Search Images",
     "code": "https://www.tineye.com/bookmarklet#javascript:void(window.open('http://www.tineye.com/search?pluginver=bookmark_1.0&url='+encodeURIComponent(document.URL)));"

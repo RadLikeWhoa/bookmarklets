@@ -2,6 +2,7 @@
   "network": "Facebook",
   "category": "social",
   "color": "#3b5998",
+  "url": "https://facebook.com",
   "bookmarklets": [{
     "name": "Share",
     "code": "javascript:var%20d%3Ddocument,f%3D%27https://www.facebook.com/share%27,l%3Dd.location,e%3DencodeURIComponent,p%3D%27.php%3Fsrc%3Dbm%26v%3D4%26i%3D1349189003%26u%3D%27%2Be(l.href)%2B%27%26t%3D%27%2Be(d.title)%3B1%3Btry%7Bif%20(!/%5E(.*%5C.)%3Ffacebook%5C.%5B%5E.%5D*%24/.test(l.host))throw(0)%3Bshare_internal_bookmarklet(p)%7Dcatch(z)%20%7Ba%3Dfunction()%20%7Bif%20(!window.open(f%2B%27r%27%2Bp,%27sharer%27,%27toolbar%3D0,status%3D0,resizable%3D1,width%3D626,height%3D436%27))l.href%3Df%2Bp%7D%3Bif%20(/Firefox/.test(navigator.userAgent))setTimeout(a,0)%3Belse%7Ba()%7D%7Dvoid(0)"

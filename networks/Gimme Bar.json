@@ -2,6 +2,7 @@
   "network": "Gimme Bar",
   "category": "social",
   "color": "#f70078",
+  "url": "https://gimmebar.com",
   "bookmarklets": [{
     "name": "Add",
     "code": "javascript:%28function%28%29%20%7Bvar%20a%3D%27setAttribute%27%3Bvar%20d%3Ddocument%3Bfunction%20o%28%29%20%7Bvar%20s2%3Bif%20%28this.readyState%20%3D%3D%3D%204%29%20%7Bs2%3Dd.createElement%28%27script%27%29%3Bs2%5Ba%5D%28%27type%27%2C%27text%2Fjavascript%27%29%3Bs2.appendChild%28d.createTextNode%28this.responseText%29%29%3Bd.body.appendChild%28s2%29%3B%7D%7Dvar%20s%3Dd.createElement%28%27script%27%29%3Bs%5Ba%5D%28%27type%27%2C%27text%2Fjavascript%27%29%3Bs%5Ba%5D%28%27src%27%2C%27https%3A%2F%2Fgimmebar.com%2Fbookmarklet%2F2%27%29%3Bd.body.appendChild%28s%29%3Bvar%20x%3Dnew%20XMLHttpRequest%28%29%3Bx.onreadystatechange%3Do%3Bx.open%28%27GET%27%2C%20%27https%3A%2F%2Fgimmebar.com%2Fbookmarklet%2Fstub%27%2C%20true%29%3Bx.send%28%27%27%29%3B%7D%29%28%29%3B"

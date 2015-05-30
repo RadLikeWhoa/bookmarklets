@@ -20,7 +20,7 @@
       <ul class="networks list">
         {{#networks}}
           <li class="network" data-category="{{ category }}" style="background-color: {{ color }}">
-            <h2 class="network__name">{{ network }}</h2>
+            <h2 class="network__name"><a href="{{ url }}">{{ network }}</a></h2>
             <ul class="bookmarklets">
               {{#bookmarklets}}
                 <li class="bookmarklet">

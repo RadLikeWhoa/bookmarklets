@@ -39,7 +39,7 @@ module.exports = function (options) {
 					if (err) {
 						return cb(new gutil.PluginError('gulp-cssmin', err));
 					}
-					var minimized = new CleanCSS(options).minify(data);
+					var minimized = new CleanCSS(options).minify(data).styles;
 					if (options.showLog) {
 						gutil.log('gulp-cssmin:', gutil.colors.green('✔ ') + file.relative);
 					}

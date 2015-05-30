@@ -2,6 +2,7 @@
   "network": "Google+",
   "category": "social",
   "color": "#db4a39",
+  "url": "https://plus.google.com",
   "bookmarklets": [{
     "name": "Share",
     "code": "javascript:void(window.open(%22https://plus.google.com/share?url=%22+encodeURIComponent(location),%20%22Share%20to%20Google+%22,%22width=600,height=460,menubar=no,location=no,status=no%22));"

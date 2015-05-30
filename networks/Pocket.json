@@ -2,6 +2,7 @@
   "network": "Pocket",
   "category": "news",
   "color": "#ee4056",
+  "url": "https://getpocket.com",
   "bookmarklets": [{
     "name": "Send to Pocket",
     "code": "javascript:(function(){ISRIL_H='8fc9';PKT_D='getpocket.com';ISRIL_SCRIPT=document.createElement('SCRIPT');ISRIL_SCRIPT.type='text/javascript';ISRIL_SCRIPT.src='http://'+PKT_D+'/b/r.js';document.getElementsByTagName('head')[0].appendChild(ISRIL_SCRIPT)})();"
